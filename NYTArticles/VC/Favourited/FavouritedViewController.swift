@@ -26,12 +26,14 @@ class FavouritedViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         if let index = self.tableView.indexPathForSelectedRow {
             self.tableView.deselectRow(at: index, animated: true)
         }
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
         getLocalData()
     }
     

@@ -39,6 +39,7 @@ class ArticleViewController: UIViewController, WKNavigationDelegate {
     }
 
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
         if let isFav = self.isFavourite {
             addToFavsBtn.isEnabled = !isFav
         }

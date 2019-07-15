@@ -14,6 +14,7 @@ class SharedTableViewCell: UITableViewCell {
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var subtitle: UILabel!
 
+    // MARK: - Cell life-cycle
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
